@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Divin BADIDI - SIte web Officiel et Principal</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        .hero-image img {
+    max-width: 100%;
+    height: auto;
+
+    /* Effet fondu sur les bords */
+    -webkit-mask-image: radial-gradient(circle, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+    mask-image: radial-gradient(circle, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+}
+.hero-image img {
+    border-radius: 0;
+    background: transparent;
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.15);
+}
+.hero-image img {
+    mix-blend-mode: multiply;
+}
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    -webkit-mask-image: radial-gradient(circle, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+    mask-image: radial-gradient(circle, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.12);
+}
+#home {
+    background: linear-gradient(120deg, #f5f7fa, #eef2f7);
+}
+
+    </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Chargement...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow py-lg-0 px-4 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand d-block d-lg-none">
+            <h1 class="text-primary fw-bold m-0">Divin BADIDI</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between py-4 py-lg-0" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="#home" class="nav-item nav-link active">Accueil</a>
+                <a href="#about" class="nav-item nav-link">A Propos</a>
+                <a href="#skill" class="nav-item nav-link">Compétences</a>
+                <a href="#service" class="nav-item nav-link">Services</a>
+            </div>
+            <a href="index.html" class="navbar-brand bg-secondary py-3 px-4 mx-3 d-none d-lg-block">
+                <h1 class="text-primary fw-bold m-0">Divin BADIDI</h1>
+            </a>
+            <div class="navbar-nav me-auto py-0">
+                <a href="#project" class="nav-item nav-link">Projects</a>
+                <a href="#testimonial" class="nav-item nav-link">Temoignages</a>
+                <a href="#contact" class="nav-item nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-light my-6 mt-0" id="home">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 py-6 pb-0 pt-lg-0">
+                    <h3 class="text-primary mb-3">Je Suis </h3>
+                    <h1 class="display-3 mb-3">Divin BADIDI</h1>
+                    <h2 class="typed-text-output d-inline"></h2>
+                    <div class="typed-text d-none">Licencié en Conception de Système d'information, Gradué en informatique de Gestion,Web Designer, Developpeur Web, Developpeur Front-End, Concepteur des Applications </div>
+                    <div class="d-flex align-items-center pt-5">
+                        <a target="_blank" href="img/CV_Divin_Nouveau.pdf" class="btn btn-primary py-3 px-4 me-5">Télecharger CV</a>
+                        <button type="button" class="btn-play" data-bs-toggle="modal"
+                            data-src="https://youtu.be/RLgY_HkBKjU?si=surRyDhtLB-oYRU-" data-bs-target="#videoModal">
+                            <span></span>
+                        </button>
+                        <h5 class="ms-4 mb-0 d-none d-sm-block">Lire la Video</h5>
+                    </div>
+                </div>
+                <div class="col-lg-6 hero-image">
+                    <img class="img-fluid" src="img/ChatGPT Image 27 déc. 2025, 20_17_23.png" alt="Divin BADIDI">
+                </div>                
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- Video Modal Start -->
+    <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">Youtube Video</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- 16:9 aspect ratio -->
+                    <div class="ratio ratio-16x9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
+                            allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
+
+
+    <!-- About Start -->
+<div class="container-xxl py-6" id="about">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="d-flex align-items-center mb-5">
+                    <div class="years flex-shrink-0 text-center me-4">
+                        <h1 class="display-1 mb-0">5+</h1>
+                        <h5 class="mb-0">ans</h5>
+                    </div>
+                    <h3 class="lh-base mb-0">
+                        d’expérience professionnelle en technologies numériques et systèmes d’information
+                    </h3>
+                </div>
+
+                <p class="mb-4">
+                    Je suis <strong>Divin BADIDI</strong>, expert en <strong>Systèmes d’Information et Technologies Numériques</strong>,
+                    entrepreneur, formateur et consultant IT. Licencié en Conception des Systèmes d’Information,
+                    gradué en Informatique de Gestion et diplômé en Électrotechnique Industrielle,
+                    j’accompagne entreprises, institutions et particuliers dans leur transformation digitale.
+                </p>
+
+                <p class="mb-3">
+                    <i class="far fa-check-circle text-primary me-3"></i>
+                    Solutions numériques professionnelles et adaptées aux besoins réels
+                </p>
+                <p class="mb-3">
+                    <i class="far fa-check-circle text-primary me-3"></i>
+                    Expertise en développement, data, intelligence artificielle et systèmes de gestion
+                </p>
+                <p class="mb-3">
+                    <i class="far fa-check-circle text-primary me-3"></i>
+                    Formation, encadrement et accompagnement orientés résultats
+                </p>
+
+                <a class="btn btn-primary py-3 px-5 mt-3" href="#contact">
+                    Me contacter
+                </a>
+            </div>
+
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="row g-3 mb-4">
+                    <div class="col-sm-6">
+                        <img class="img-fluid rounded" src="img/IMG_0029-removebg-preview.png" alt="InnotechSolutions - Technologie">
+                    </div>
+                    <div class="col-sm-6">
+                        <img class="img-fluid rounded" src="img/IMG_0028-removebg-preview.png" alt="InnotechSolutions - Formation">
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-center mb-3">
+                    <h5 class="border-end pe-3 me-3 mb-0">Personnes formées & encadrées</h5>
+                    <h2 class="text-primary fw-bold mb-0" data-toggle="counter-up">100</h2>
+                </div>
+                <p class="mb-4">
+                    À travers mes activités de formation et d’encadrement académique, notamment en tant que
+                    co-directeur des Travaux de Fin d’Études à l’ISPT-Kinshasa, je contribue activement
+                    à l’élévation des compétences technologiques depuis plus de cinq ans.
+                </p>
+
+                <div class="d-flex align-items-center mb-3">
+                    <h5 class="border-end pe-3 me-3 mb-0">Projets & réalisations</h5>
+                    <h2 class="text-primary fw-bold mb-0" data-toggle="counter-up">50</h2>
+                </div>
+                <p class="mb-0">
+                    Développement d’applications web et mobiles, solutions de gestion, systèmes d’information,
+                    plateformes de collecte et d’analyse de données, accompagnement digital et solutions sur mesure
+                    pour divers secteurs d’activité.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About End -->
+
+    <!-- About End -->
+
+    <div class="container-xxl py-6 pb-5" id="skill">
+        <div class="container">
+            <div class="row g-5">
+    
+                <!-- COMPÉTENCES -->
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <h1 class="display-5 mb-5">Compétences & Domaines d’expertise</h1>
+                    <p class="mb-4">
+                        Professionnel IT polyvalent avec une expertise avancée en développement logiciel,
+                        analyse des données, systèmes d’information, comptabilité informatisée,
+                        gestion de projet, formation et transformation digitale.
+                    </p>
+    
+                    <h3 class="mb-4">Expertises clés</h3>
+    
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+    
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">Laravel / PHP / API REST</h6>
+                                    <h6 class="font-weight-bold">90%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-primary" style="width:90%"></div>
+                                </div>
+                            </div>
+    
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">JavaScript / React JS</h6>
+                                    <h6 class="font-weight-bold">85%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-warning" style="width:85%"></div>
+                                </div>
+                            </div>
+    
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">Programmation Desktop (Java, C#, WinDev)</h6>
+                                    <h6 class="font-weight-bold">85%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-info" style="width:85%"></div>
+                                </div>
+                            </div>
+    
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">Mobile (Flutter, GoNative, PWA)</h6>
+                                    <h6 class="font-weight-bold">80%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" style="width:80%"></div>
+                                </div>
+                            </div>
+    
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">Analyse des données (SPSS, R, Python, Power BI)</h6>
+                                    <h6 class="font-weight-bold">90%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-danger" style="width:90%"></div>
+                                </div>
+                            </div>
+    
+                        </div>
+    
+                        <div class="col-md-6">
+    
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">Collecte des données (ODK, Kobo, Forms)</h6>
+                                    <h6 class="font-weight-bold">95%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-primary" style="width:95%"></div>
+                                </div>
+                            </div>
+    
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">Comptabilité (Sage, QuickBooks, Banana)</h6>
+                                    <h6 class="font-weight-bold">90%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-dark" style="width:90%"></div>
+                                </div>
+                            </div>
+    
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">Paie & RH (Sage Paie & RH)</h6>
+                                    <h6 class="font-weight-bold">85%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-warning" style="width:85%"></div>
+                                </div>
+                            </div>
+    
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">ERP & Logistique (Gestan, Stock Express)</h6>
+                                    <h6 class="font-weight-bold">85%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-info" style="width:85%"></div>
+                                </div>
+                            </div>
+    
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">Gestion de projet (MS Project, Agile)</h6>
+                                    <h6 class="font-weight-bold">80%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" style="width:80%"></div>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- EXPERIENCE & FORMATION -->
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <ul class="nav nav-pills rounded border border-2 border-primary mb-5">
+                        <li class="nav-item w-50">
+                            <button class="nav-link w-100 py-3 fs-5 active" data-bs-toggle="pill" data-bs-target="#tab-1">
+                                Expériences
+                            </button>
+                        </li>
+                        <li class="nav-item w-50">
+                            <button class="nav-link w-100 py-3 fs-5" data-bs-toggle="pill" data-bs-target="#tab-2">
+                                Formations
+                            </button>
+                        </li>
+                    </ul>
+    
+                    <div class="tab-content">
+    
+                        <div id="tab-1" class="tab-pane fade show active p-0">
+                            <div class="row gy-5 gx-4">
+    
+                                <div class="col-sm-6">
+                                    <h5>Responsable & Formateur IT</h5>
+                                    <hr class="text-primary my-2">
+                                    <p class="text-primary mb-1">2022 - Présent</p>
+                                    <h6 class="mb-0">HopeTech Center</h6>
+                                </div>
+    
+                                <div class="col-sm-6">
+                                    <h5>Assistant Comptable</h5>
+                                    <hr class="text-primary my-2">
+                                    <p class="text-primary mb-1">2023 - Présent</p>
+                                    <h6 class="mb-0">Médecins d’Afrique</h6>
+                                </div>
+    
+                                <div class="col-sm-6">
+                                    <h5>Développeur Web</h5>
+                                    <hr class="text-primary my-2">
+                                    <p class="text-primary mb-1">2021 - 2024</p>
+                                    <h6 class="mb-0">Ebongitec – Ingenious City</h6>
+                                </div>
+    
+                                <div class="col-sm-6">
+                                    <h5>Informaticien</h5>
+                                    <hr class="text-primary my-2">
+                                    <p class="text-primary mb-1">2018 - 2019</p>
+                                    <h6 class="mb-0">Matafroid</h6>
+                                </div>
+    
+                            </div>
+                        </div>
+    
+                        <div id="tab-2" class="tab-pane fade p-0">
+                            <div class="row gy-5 gx-4">
+    
+                                <div class="col-sm-6">
+                                    <h5>Licence en Informatique</h5>
+                                    <hr class="text-primary my-2">
+                                    <p class="text-primary mb-1">2024</p>
+                                    <h6 class="mb-0">ISPT-KIN</h6>
+                                </div>
+    
+                                <div class="col-sm-6">
+                                    <h5>Graduat en Informatique de Gestion</h5>
+                                    <hr class="text-primary my-2">
+                                    <p class="text-primary mb-1">2021</p>
+                                    <h6 class="mb-0">ISPT-KIN</h6>
+                                </div>
+    
+                                <div class="col-sm-6">
+                                    <h5>Humanités Techniques – Électrotechnique</h5>
+                                    <hr class="text-primary my-2">
+                                    <p class="text-primary mb-1">2016</p>
+                                    <h6 class="mb-0">ITI Gombe</h6>
+                                </div>
+    
+                                <div class="col-sm-6">
+                                    <h5>Formations Professionnelles IT</h5>
+                                    <hr class="text-primary my-2">
+                                    <p class="text-primary mb-1">2016</p>
+                                    <h6 class="mb-0">CECONTEC</h6>
+                                </div>
+    
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- Expertise End -->
+
+
+    <!-- Service Start -->
+    <div class="container-fluid bg-light my-5 py-6" id="service">
+        <div class="container">
+            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-6">
+                    <h1 class="display-5 mb-0">Mes Services</h1>
+                </div>
+                <div class="col-lg-6 text-lg-end">
+                    <a class="btn btn-primary py-3 px-5" href="#contact">Me contacter</a>
+                </div>
+            </div>
+    
+            <div class="row g-4">
+    
+                <!-- DEV WEB -->
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                        <div class="bg-icon flex-shrink-0 mb-3">
+                            <i class="fa fa-code fa-2x text-dark"></i>
+                        </div>
+                        <div class="ms-sm-4">
+                            <h4 class="mb-3">Développement Web & API</h4>
+                            <span>
+                                Conception de sites web et plateformes dynamiques, développement d’API RESTful,
+                                applications web sécurisées avec Laravel, PHP, JavaScript et React JS.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- DATA -->
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                        <div class="bg-icon flex-shrink-0 mb-3">
+                            <i class="fa fa-chart-line fa-2x text-dark"></i>
+                        </div>
+                        <div class="ms-sm-4">
+                            <h4 class="mb-3">Collecte & Analyse des Données</h4>
+                            <span>
+                                Collecte de données avec ODK, KoboCollect, Google Forms, Microsoft Forms,
+                                analyse statistique avec SPSS, R, Python (Pandas, Jupyter) et Power BI.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- ERP / COMPTA -->
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                        <div class="bg-icon flex-shrink-0 mb-3">
+                            <i class="fa fa-calculator fa-2x text-dark"></i>
+                        </div>
+                        <div class="ms-sm-4">
+                            <h4 class="mb-3">Comptabilité & ERP</h4>
+                            <span>
+                                Mise en place et gestion de solutions comptables et ERP :
+                                Sage Comptabilité, QuickBooks, Banana, Gestan, Stock Express,
+                                avec production des états financiers.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- PAIE RH -->
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                        <div class="bg-icon flex-shrink-0 mb-3">
+                            <i class="fa fa-users fa-2x text-dark"></i>
+                        </div>
+                        <div class="ms-sm-4">
+                            <h4 class="mb-3">Paie & Ressources Humaines</h4>
+                            <span>
+                                Paramétrage et gestion des salaires, contrats et dossiers RH
+                                à l’aide de Sage Paie & RH, avec accompagnement des équipes.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- FORMATION -->
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                        <div class="bg-icon flex-shrink-0 mb-3">
+                            <i class="fa fa-chalkboard-teacher fa-2x text-dark"></i>
+                        </div>
+                        <div class="ms-sm-4">
+                            <h4 class="mb-3">Formation & Encadrement IT</h4>
+                            <span>
+                                Formations pratiques en informatique, programmation, bureautique,
+                                ERP, analyse des données et accompagnement académique (TFC & mémoire).
+                            </span>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- DIGITAL & DESIGN -->
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                        <div class="bg-icon flex-shrink-0 mb-3">
+                            <i class="fa fa-paint-brush fa-2x text-dark"></i>
+                        </div>
+                        <div class="ms-sm-4">
+                            <h4 class="mb-3">Design, Multimédia & Marketing Digital</h4>
+                            <span>
+                                Création graphique, montage vidéo, branding, community management
+                                et campagnes publicitaires (Facebook Ads, Google Ads).
+                            </span>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    
+    <!-- Service End -->
+
+
+    <!-- Projects Start -->
+    <div class="container-xxl py-6 pt-5" id="project">
+        <div class="container">
+            <div class="row g-5 mb-5 align-items-center wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-6">
+                    <h1 class="display-5 mb-0">Mes Projects</h1>
+                </div>
+                <div class="col-lg-6 text-lg-end">
+                    <ul class="list-inline mx-n3 mb-0" id="portfolio-flters">
+                        <li class="mx-3 active" data-filter="*">All Projects</li>
+                        <li class="mx-3" data-filter=".first">Applications</li>
+                        <li class="mx-3" data-filter=".second">Graphic Design</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-4 col-md-6 portfolio-item first">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/project-1.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item second">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/project-2.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-2.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item first">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/project-3.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-3.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item second">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/project-4.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-4.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item first">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/project-5.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-5.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item second">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/project-6.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-6.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Projects End -->
+
+
+    <!-- Team Start -->
+    <!-- Team End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid bg-light py-5 my-5" id="testimonial">
+        <div class="container-fluid py-5">
+            <h1 class="display-5 text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Références</h1>
+            <div class="row justify-content-center">
+                <div class="col-lg-3 d-none d-lg-block">
+                    <div class="testimonial-left h-100">
+                        <img class="img-fluid wow fadeIn" data-wow-delay="0.1s" src="https://img.icons8.com/ios-filled/100/000000/user-male-circle.png" alt="Sarah MBUYI">
+                        <img class="img-fluid wow fadeIn" data-wow-delay="0.3s" src="https://img.icons8.com/ios-filled/100/000000/user-male-circle.png" alt="Horeb Bin BONDENGA">
+                        <img class="img-fluid wow fadeIn" data-wow-delay="0.5s" src="https://img.icons8.com/ios-filled/100/000000/user-male-circle.png" alt="Chef de Travaux KAMBERE">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="owl-carousel testimonial-carousel">
+                        <!-- Sarah MBUYI -->
+                        <div class="testimonial-item text-center">
+                            <div class="position-relative mb-5">
+                                <img class="img-fluid rounded-circle border border-secondary p-2 mx-auto" src="https://img.icons8.com/ios-filled/100/000000/user-male-circle.png" alt="Sarah MBUYI">
+                                <div class="testimonial-icon">
+                                    <i class="fa fa-quote-left text-primary"></i>
+                                </div>
+                            </div>
+                            <p class="fs-5 fst-italic">Sarah MBUYI a suivi mon travail et peut témoigner de mon sérieux et de mon professionnalisme.</p>
+                            <hr class="w-25 mx-auto">
+                            <h5>Sarah MBUYI</h5>
+                            <span>+243 838684989</span>
+                        </div>
+    
+                        <!-- Horeb Bin BONDENGA -->
+                        <div class="testimonial-item text-center">
+                            <div class="position-relative mb-5">
+                                <img class="img-fluid rounded-circle border border-secondary p-2 mx-auto" src="https://img.icons8.com/ios-filled/100/000000/user-male-circle.png" alt="Horeb Bin BONDENGA">
+                                <div class="testimonial-icon">
+                                    <i class="fa fa-quote-left text-primary"></i>
+                                </div>
+                            </div>
+                            <p class="fs-5 fst-italic">Horeb Bin BONDENGA a travaillé avec moi et peut attester de mes compétences professionnelles.</p>
+                            <hr class="w-25 mx-auto">
+                            <h5>Horeb Bin BONDENGA</h5>
+                            <span>+243 82860286</span>
+                        </div>
+    
+                        <!-- Chef de Travaux KAMBERE -->
+                        <div class="testimonial-item text-center">
+                            <div class="position-relative mb-5">
+                                <img class="img-fluid rounded-circle border border-secondary p-2 mx-auto" src="https://img.icons8.com/ios-filled/100/000000/user-male-circle.png" alt="Chef de Travaux KAMBERE">
+                                <div class="testimonial-icon">
+                                    <i class="fa fa-quote-left text-primary"></i>
+                                </div>
+                            </div>
+                            <p class="fs-5 fst-italic">Le Chef de Travaux KAMBERE peut confirmer mon implication et la qualité de mes projets réalisés.</p>
+                            <hr class="w-25 mx-auto">
+                            <h5>Chef de Travaux KAMBERE</h5>
+                            <span>+243 813864518</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 d-none d-lg-block">
+                    <div class="testimonial-right h-100">
+                        <img class="img-fluid wow fadeIn" data-wow-delay="0.1s" src="https://img.icons8.com/ios-filled/100/000000/user-male-circle.png" alt="Sarah MBUYI">
+                        <img class="img-fluid wow fadeIn" data-wow-delay="0.3s" src="https://img.icons8.com/ios-filled/100/000000/user-male-circle.png" alt="Horeb Bin BONDENGA">
+                        <img class="img-fluid wow fadeIn" data-wow-delay="0.5s" src="https://img.icons8.com/ios-filled/100/000000/user-male-circle.png" alt="Chef de Travaux KAMBERE">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+    
+<!-- Contact Start -->
+<div class="container-xxl pb-5" id="contact">
+    <div class="container py-5">
+        <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="col-lg-6">
+                <h1 class="display-5 mb-0">Restons en contact</h1>
+            </div>
+            <div class="col-lg-6 text-lg-end">
+                <a class="btn btn-primary py-3 px-5" href="https://wa.me/243817767357" target="_blank">Dire Bonjour ?</a>
+            </div>
+        </div>
+        <div class="row g-5">
+            <!-- Infos perso -->
+            <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <p class="mb-2">Appelez moi/ WhatsApp:</p>
+                <h3 class="fw-bold">+243 81 77 67 357</h3>
+                <hr class="w-100">
+                <p class="mb-2">Abonnez-vous sur mes Reseaux Sociaux:</p>
+                <div class="d-flex pt-2">
+                    <a class="btn btn-square btn-primary me-2" href="https://www.facebook.com/InnoTechSolutions" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-square btn-primary me-2" href="https://www.instagram.com/inno_tech_solution" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-square btn-primary me-2 d-flex align-items-center justify-content-center" 
+                    href="https://www.tiktok.com/@inno_techsolution" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3046/3046120.png" alt="TikTok" style="width:20px; height:20px;">
+                 </a>
+                 
+                    
+                    <a class="btn btn-square btn-primary me-2" href="https://www.youtube.com/@DivinBADIDISoft" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-square btn-primary me-2" href="https://www.linkedin.com/in/divin-badidi" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-square btn-primary me-2" href="https://github.com/badidi-divin" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+
+            <!-- Formulaire -->
+            <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <form id="contactForm">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                <label for="name">Votre Nom Complet</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                <label for="email">Votre Email</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                <label for="subject">Sujet</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
+                                <label for="message">Message</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary py-3 px-5" type="submit">Envoyer un Message</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Contact End -->
+
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(e){
+    e.preventDefault();
+
+    const name = document.getElementById('name').value || '';
+    const email = document.getElementById('email').value || '';
+    const subject = document.getElementById('subject').value || '';
+    const message = document.getElementById('message').value || '';
+
+    const text = `Name: ${name}%0AEmail: ${email}%0ASubject: ${subject}%0AMessage: ${message}`;
+    const whatsappURL = `https://wa.me/243817767357?text=${text}`;
+
+    window.open(whatsappURL, '_blank');
+});
+</script>
+
+
+    <!-- Map Start -->
+    <div class="container-xxl pt-5 px-0 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container-xxl pt-5 px-0">
+            <div class="bg-dark">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.XXXXXXX!2d15.32968!3d-4.31913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a6a3ccbbbbbbbbb%3A0xyourmarkerid!2sBon-March%C3%A9%2C%20Kinshasa%2C%20RDC!5e0!3m2!1sfr!2scd!4v1700000000000!5m2!1sfr!2scd"
+                    frameborder="0" style="width: 100%; height: 450px; border:0;" allowfullscreen=""
+                    aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- Map End -->
+
+
+    <!-- Copyright Start -->
+
+    <!-- Copyright End -->
+
+
+<!-- Footer Start -->
+<footer class="bg-dark text-white pt-4 pb-2">
+    <div class="container text-center">
+        <p class="mb-0">Ce site a été développé par <strong>Divin BADIDI</strong></p>
+    </div>
+</footer>
+<!-- Footer End -->
+
+<!-- Back to Top -->
+<a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top">
+    <i class="bi bi-arrow-up"></i>
+</a>
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/243817767357?text=Bonjour%20Divin,%20je%20souhaite%20vous%20contacter" 
+   target="_blank" 
+   style="position:fixed; bottom:20px; right:20px; z-index:1000; background-color:#25D366; color:white; border-radius:50%; width:60px; height:60px; display:flex; align-items:center; justify-content:center; box-shadow: 0 4px 6px rgba(0,0,0,0.3);">
+    <i class="fab fa-whatsapp fa-2x"></i>
+</a>
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/typed/typed.min.js"></script>
+<script src="lib/counterup/counterup.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/isotope/isotope.pkgd.min.js"></script>
+<script src="lib/lightbox/js/lightbox.min.js"></script>
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
