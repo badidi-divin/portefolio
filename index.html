@@ -27,6 +27,28 @@
     .reveal{opacity:0;transform:translateY(18px);transition:opacity .65s ease,transform .65s ease}
     .reveal.visible{opacity:1;transform:translateY(0)}
     .skill-chip{border:1px solid rgba(148,163,184,.18);background:rgba(255,255,255,.04)}
+    /* Theme toggle: dark is default; light mode overrides key surfaces and text */
+    html[data-theme="light"] body{background:#f8fafc!important;color:#0f172a!important}
+    html[data-theme="light"] header{background:rgba(248,250,252,.92)!important;border-color:#e2e8f0!important}
+    html[data-theme="light"] header a,html[data-theme="light"] header button{color:#0f172a}
+    html[data-theme="light"] main section{border-color:#e2e8f0!important}
+    html[data-theme="light"] main section.bg-slate-900\\/60{background:#f1f5f9!important}
+    html[data-theme="light"] main section.bg-gradient-to-br{background:linear-gradient(135deg,#eff6ff,#f8fafc)!important}
+    html[data-theme="light"] h1,html[data-theme="light"] h2,html[data-theme="light"] h3,html[data-theme="light"] h4,
+    html[data-theme="light"] .text-white{color:#0f172a!important}
+    html[data-theme="light"] .text-slate-200{color:#1e293b!important}
+    html[data-theme="light"] .text-slate-300,html[data-theme="light"] .text-slate-400{color:#475569!important}
+    html[data-theme="light"] .text-slate-500,html[data-theme="light"] .text-slate-600{color:#64748b!important}
+    html[data-theme="light"] .bg-slate-950,html[data-theme="light"] .bg-slate-950\\/70,html[data-theme="light"] .bg-slate-950\\/60,
+    html[data-theme="light"] .bg-slate-900\\/60{background-color:#fff!important}
+    html[data-theme="light"] .border-white\\/10,html[data-theme="light"] .border-white\\/5,html[data-theme="light"] .border-white\\/15{border-color:#cbd5e1!important}
+    html[data-theme="light"] .bg-white\\/[.03],html[data-theme="light"] .bg-white\\/[.02],html[data-theme="light"] .bg-white\\/[.09],
+    html[data-theme="light"] .from-white\\/[.09]{background-color:rgba(255,255,255,.85)!important}
+    html[data-theme="light"] footer{background:#f1f5f9!important;border-color:#cbd5e1!important;color:#475569!important}
+    html[data-theme="light"] .grid-bg{background-image:linear-gradient(rgba(100,116,139,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(100,116,139,.08) 1px,transparent 1px)}
+    .portrait-frame{background:linear-gradient(135deg,#4263eb,#22d3ee);padding:4px;border-radius:1.75rem}
+    .portrait-frame img{width:100%;height:100%;object-fit:cover;border-radius:1.5rem}
+    html[data-theme="light"] .skill-chip{background:#f8fafc;border-color:#cbd5e1;color:#334155}
   </style>
 </head>
 <body class="bg-slate-950 text-slate-200 antialiased selection:bg-blue-500/30">
@@ -40,6 +62,7 @@
         <a class="nav-link py-2 text-sm text-slate-300 hover:text-white" href="#expertises">Expertises</a>
         <a class="nav-link py-2 text-sm text-slate-300 hover:text-white" href="#projets">Projets</a>
         <a class="nav-link py-2 text-sm text-slate-300 hover:text-white" href="#parcours">Parcours</a>
+        <button id="themeToggle" type="button" class="mt-2 rounded-full border border-white/15 px-4 py-2.5 text-sm font-semibold text-white transition hover:border-cyan-300 md:mt-0" aria-label="Basculer entre le thème clair et sombre" title="Changer de thème"><i id="themeIcon" class="fa-solid fa-sun mr-2"></i><span id="themeLabel">Mode clair</span></button>
         <a class="mt-2 rounded-full bg-blue-600 px-5 py-2.5 text-center text-sm font-semibold text-white transition hover:bg-blue-500 md:mt-0" href="#contact">Me contacter <i class="fa-solid fa-arrow-up-right-from-square ml-2 text-xs"></i></a>
       </div>
     </nav>
@@ -67,6 +90,13 @@
           </div>
         </div>
         <div class="reveal">
+          <div class="mx-auto mb-6 grid max-w-md grid-cols-[112px_1fr] items-center gap-5 sm:grid-cols-[140px_1fr]">
+            <div class="portrait-frame aspect-square shadow-glow">
+              <img src="img/divin-badidi.jpg" alt="Portrait professionnel de Divin BADIDI" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div style="display:none" class="h-full w-full items-center justify-center rounded-3xl bg-slate-900 text-3xl font-black text-white">DB</div>
+            </div>
+            <div><p class="text-xs font-bold uppercase tracking-[.2em] text-cyan-400">Votre partenaire numérique</p><h2 class="mt-2 text-2xl font-black text-white sm:text-3xl">Divin BADIDI</h2><p class="mt-2 text-sm leading-6 text-slate-400">Développeur Full-stack · Consultant IT · Formateur</p></div>
+          </div>
           <div class="relative mx-auto max-w-md rounded-3xl border border-white/10 bg-gradient-to-br from-white/[.09] to-white/[.02] p-6 shadow-2xl">
             <div class="mb-5 flex items-center justify-between border-b border-white/10 pb-4"><div class="flex gap-2"><span class="h-3 w-3 rounded-full bg-rose-400"></span><span class="h-3 w-3 rounded-full bg-amber-300"></span><span class="h-3 w-3 rounded-full bg-emerald-400"></span></div><span class="font-mono text-xs text-slate-500">divin.config.js</span></div>
             <div class="space-y-3 font-mono text-sm leading-7 sm:text-base">
@@ -194,6 +224,24 @@
   <footer class="border-t border-white/10 bg-slate-950 px-5 py-7 text-center text-sm text-slate-500"><p>© <span id="year"></span> Divin BADIDI. Tous droits réservés.</p><p class="mt-1">Conçu avec soin, Tailwind CSS & passion pour la technologie.</p></footer>
   <a href="#accueil" aria-label="Retour en haut" class="fixed bottom-5 right-5 flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-blue-600 text-white shadow-lg transition hover:bg-blue-500"><i class="fa-solid fa-arrow-up"></i></a>
   <script>
+    // Theme preference persisted locally in the browser
+    const root=document.documentElement;
+    const themeToggle=document.getElementById('themeToggle');
+    const themeIcon=document.getElementById('themeIcon');
+    const themeLabel=document.getElementById('themeLabel');
+    function applyTheme(theme){
+      root.setAttribute('data-theme',theme);
+      const isDark=theme==='dark';
+      themeIcon.className=isDark?'fa-solid fa-sun mr-2':'fa-solid fa-moon mr-2';
+      themeLabel.textContent=isDark?'Mode clair':'Mode sombre';
+      document.querySelector('meta[name="theme-color"]').setAttribute('content',isDark?'#0b1220':'#f8fafc');
+      try{localStorage.setItem('portfolio-theme',theme)}catch(e){}
+    }
+    let savedTheme='dark';
+    try{savedTheme=localStorage.getItem('portfolio-theme')||'dark'}catch(e){}
+    applyTheme(savedTheme);
+    themeToggle.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')==='dark'?'light':'dark'));
+
     document.getElementById('year').textContent = new Date().getFullYear();
     const menuBtn=document.getElementById('menuBtn'), navLinks=document.getElementById('navLinks');
     menuBtn.addEventListener('click',()=>{navLinks.classList.toggle('hidden');navLinks.classList.toggle('flex');});
